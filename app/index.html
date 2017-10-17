@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue/JS Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Vue/JS Comparison</h1>
+
+  <h2>JavaScript</h2>
+
+  <div id="js-message"></div>
+
+  <hr />
+
+  <h2>Vue</h2>
+
+  <div id="app">
+
+    <div v-if="vueShowMessage">{{ vueMessage }}</div>
+
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="main.js"></script>
+
+  <script>
+
+    var message = document.getElementById('js-message');
+
+    message.innerHTML = "Hello from JavaScript";
+    message.style.display = 'block';
+
+  </script>
+
+</body>
+</html>
